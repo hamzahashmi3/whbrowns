@@ -4,17 +4,31 @@ export default function Navbar() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 py-4 sm:px-8 sm:py-5">
       <nav className="mx-auto flex max-w-[1450px] items-center justify-between rounded-2xl border border-white/10 bg-[#030817]/60 backdrop-blur-md border border-white/10 shadow-[0_0_40px_rgba(0,0,0,.45)] sm:px-6 sm:py-4">
-        <a href="#home" className="flex items-center gap-3">
-          <div className="text-[2rem] font-black leading-none tracking-tighter">
-            <span className="text-sky-300">W</span>
-            <span className="text-violet-400">B</span>
+        <a 
+          href="https://www.whbrowns.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="group flex items-center gap-3 transition hover:scale-105"
+        >
+
+          {/* WB Logo */}
+          <div className="text-[2rem] font-black tracking-tight">
+            <span className="text-sky-300 group-hover:drop-shadow-[0_0_10px_rgba(56,189,248,1)]">
+              W
+            </span>
+            <span className="text-violet-400 group-hover:drop-shadow-[0_0_10px_rgba(139,92,246,1)]">
+              B
+            </span>
           </div>
+
+          {/* Text */}
           <div>
-            <p className="text-lg font-black leading-none tracking-wide">WHBROWNS</p>
-            <p className="mt-1 text-[9px] font-bold uppercase tracking-[.25em] text-slate-400">
+            <p className="text-lg font-black leading-none">WHBROWNS</p>
+            <p className="text-[9px] uppercase tracking-[.25em] text-slate-400">
               Cloud • DevOps • E-commerce
             </p>
           </div>
+
         </a>
 
         <div className="hidden items-center gap-9 text-sm font-bold text-slate-200 lg:flex">
